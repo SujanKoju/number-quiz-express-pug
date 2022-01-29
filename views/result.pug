@@ -1,8 +1,11 @@
 html
     head
+        style
+            include ../css/quiz.css
         title The Number Quiz
     body
-        h1 The Number Quiz
-        p Your current score is #{currentScore}
-        p You have completed the Number Quiz , with a score of #{currentScore} out of 5.
-        a(href="http://localhost:8000/quiz") Play Again !!
+        fieldset
+            h1 The Number Quiz
+            p Your current score is #{currentScore}
+            p You have completed the Number Quiz , with a score of #{currentScore} out of 5.
+            a(href="http://localhost:8000/quiz") Play Again !!

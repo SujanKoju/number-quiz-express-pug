@@ -1,17 +1,21 @@
 html
     head
         title The Number Quiz
+        style
+            include ../css/quiz.css
     body
-        form(method='post' , action='http://localhost:8000/quiz')
-            h1 The Number Quiz
-            p Your current score is #{currentScore}
-            p Guess the next number in the sequence
-            p #{questions}
-            p Your answer :
-            input(type="text", name="answer", id="answer")
-            input(type="hidden", name="quizNumber", value=quizNumber)
-            input(type="hidden", name="score", value=score)
-            br
-            br
-            input(type="submit", value="Submit")
+        fieldset
+            form(method='post' , action='http://localhost:8000/quiz', id="quiz-form")
+                h1 The Number Quiz
+                p Your current score is #{currentScore}
+                p Guess the next number in the sequence
+                p #{questions}
+                p Your answer :
+                input(type="text", name="answer", id="answer")
+                input(type="hidden", name="quizNumber", value=quizNumber)
+                input(type="hidden", name="score", value=score)
+                br
+                br
+                input(type="submit", value="Submit")
+
 
