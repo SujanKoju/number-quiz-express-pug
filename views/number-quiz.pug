@@ -10,7 +10,7 @@ html
                 p Your current score is #{currentScore}
                 p Guess the next number in the sequence
                 p #{questions}
-                p Your answer :
+                label(for="answer") Your answer :
                 input(type="text", name="answer", id="answer")
                 input(type="hidden", name="quizNumber", value=quizNumber)
                 input(type="hidden", name="score", value=score)
